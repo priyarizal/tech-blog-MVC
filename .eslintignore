@@ -1,0 +1,4 @@
+node_modules
+
+
+# //dont understand why we have to do this when we can ignore this module in gitignore
