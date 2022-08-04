@@ -11,7 +11,6 @@ User.hasMany(Post, {
     onDelete: 'CASCADE'
   });
   
-
  Post.belongsTo(User, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
@@ -34,8 +33,6 @@ User.hasMany(Post, {
 Comment.belongsTo(Post, {
     foreignKey: "post_id",
   });
-
- 
 
 
 //Ale's posts can have many comments 

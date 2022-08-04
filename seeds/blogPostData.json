@@ -1,18 +1,16 @@
 [
     {
-      "title": "Music Near Me",
-      "blogpost": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-      "needed_funding": 5000
+      "title": "tea with honey and lemon will cure your depression",
+      "blogpost": "A new scientific dicover suggests that the natural ingredients of honey and Vitamin A,,C, and B6 found in lemon are proven to cure depression!"
     },
     {
-      "name": "The Ultimate Tech Quiz",
-      "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-      "needed_funding": 10000
+      "title": "You do not age in space",
+      "blogpost": "Remember the super popular movie Interstellar? Well.. the whole thing about not aging in space is true. Technically, you could age reall really reallyyy** slow if you traveled at the speed of light"
+      
     },
     {
-      "name": "Roll 'Em Up",
-      "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-      "needed_funding": 800
+      "title": "have you touched grass today?",
+      "blogpost": "Touching grass is imperative to mental and physical health. Touching grass 5 times a day, keeps depression away!"
     }
   ]
   
