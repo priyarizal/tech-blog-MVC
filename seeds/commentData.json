@@ -1,18 +1,18 @@
 
 [
     {
-        "username": "Soka",
+        "user_id": "Soka",
         "content": "Yes! I've drank tea with honey and lemon for a couple of years and it cured my depression",
         "post_id": "1"
         
     },
     {
-        "username": "Spacegirl",
+        "user_id": "Spacegirl",
         "content": "I would love to go to space one day.",
         "post_id": "2"
     },
     {
-        "username": "gamerBoy",
+        "user_id": "gamerBoy",
         "content": "Mid post bro!",
         "post_id": "3"
     }
