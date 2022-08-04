@@ -5,21 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Post</title>
-  <link rel="stylesheet" href="/public/css/jass.css">
-  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
+        <a href="/">The Tech Blog</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
-        {{#if logged_in_status}}
-        <a href="/profile">profile</a> |
+        {{#if logged_in}}
+        <a href="/dashboard">dashboard</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>
@@ -36,7 +35,7 @@
   </div>
 
   <!-- Render script for logged in users only -->
-  {{#if logged_in_status}}
+  {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
