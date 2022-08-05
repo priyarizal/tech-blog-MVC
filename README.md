@@ -9,7 +9,7 @@ This is a blog site similar to a Wordpress site, where developers can publish th
 
 ## Github URL and link to the video
 
-- GitHub URL : https://github.com/priyarizal object-relational-mapping-backend
+- GitHub URL : https://github.com/priyarizal/tech-blog-MVC
 
 
 ## Code Snippets
