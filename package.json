@@ -11,7 +11,9 @@
     "sequelize": "^6.21.3"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "seeds": "node seeds/seed.js"
+    
   },
   "name": "tech-blog-mvc",
   "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",

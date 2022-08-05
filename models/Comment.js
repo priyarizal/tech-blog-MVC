@@ -12,9 +12,9 @@ Comment.init(
       autoIncrement: true,
     },
     user_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
-        model: 'User',
+        model: 'user',
         key: 'id'
       }
     },

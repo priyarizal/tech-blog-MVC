@@ -1,3 +1,4 @@
+const { DATE } = require('sequelize');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -19,6 +20,7 @@ Post.init(
         date_created: {
             type: DataTypes.DATE,
             allowNull: false,
+            defaultValue: new Date()
         },
         content: {
             type: DataTypes.STRING,
