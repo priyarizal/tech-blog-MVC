@@ -1,11 +1,6 @@
 const router = require('express').Router();
-const { User } = require('../../models'); //dont understand 
+const { User } = require('../../models');
 
-
-//post route to create user's login
-//post routes for login 
-//within the post route to login - check if the email and password are valid (checkpassword)
-//logout post route (destroy)
 
 router.post('/', async (req, res) => {
   try {
@@ -13,7 +8,7 @@ router.post('/', async (req, res) => {
 
     req.session.save(() => {
       req.session.user_id = userData.id;
-      req.session.logged_in_status = true;
+      req.session.logged_in = true;
       
 
       res.status(200).json(userData);
@@ -22,6 +17,7 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
 
 router.post('/login', async (req, res) => {
   try {
@@ -45,8 +41,8 @@ router.post('/login', async (req, res) => {
 
     req.session.save(() => {
       req.session.user_id = userData.id;
-      req.session.logged_in_status = true;
-      // req.session.username = data.username;
+      req.session.logged_in = true;
+    
       
       res.json({ user: userData, message: 'You have been logged in!' });
     });
@@ -57,7 +53,7 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
-  if (req.session.logged_in_status) {
+  if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
     });
@@ -65,5 +61,6 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
+
 
 module.exports = router;
