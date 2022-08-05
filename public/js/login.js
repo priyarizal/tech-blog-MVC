@@ -13,7 +13,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      
+
       document.location.replace('/profile');
     } else {
       alert(response.statusText);
@@ -23,7 +23,7 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
-// Uses query selectors to grab html generated with handlebars
+  // Uses query selectors to grab html generated with handlebars
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
@@ -47,8 +47,11 @@ const signupFormHandler = async (event) => {
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
-  
+
 //adds event listener to the signup submit button 
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
+
+
+  
